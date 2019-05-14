@@ -1166,6 +1166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   visibleTexture: {fileID: 0}
   invisibleTexture: {fileID: 0}
+  teleportingObject: {fileID: 0}
 --- !u!1 &165400
 GameObject:
   m_ObjectHideFlags: 0
@@ -1713,7 +1714,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1706779322690093676}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5000001
   m_Height: 2
@@ -1733,6 +1734,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   visibleTexture: {fileID: 2100000, guid: a3369428de4912f4e845c95feed134cb, type: 2}
   invisibleTexture: {fileID: 2100000, guid: e8e5b28090cd2e54da9cafec7ab36b2c, type: 2}
+  teleportingObject: {fileID: 153878}
 --- !u!1 &7373890777923306807
 GameObject:
   m_ObjectHideFlags: 0

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR;
+using UnityEngine.SceneManagement;
 
 public class RightRayController : MonoBehaviour
 {
@@ -9,10 +10,10 @@ public class RightRayController : MonoBehaviour
     public Material visibleTexture;
     public Material invisibleTexture;
     private bool visible = false;
+    public GameObject teleportingObject;
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.gameObject.tag);
         if (other.gameObject.tag == menuItemTag && !visible)
         {
             changeVisibility();
@@ -36,6 +37,9 @@ public class RightRayController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (SteamVR_Actions.default_GrabPinch.state && visible) {
+            Destroy(teleportingObject);
+            SceneManager.LoadScene("Instituto");
+        }
     }
 }
