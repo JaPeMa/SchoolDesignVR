@@ -1,0 +1,79 @@
+fileFormatVersion: 2
+guid: ac2874e3425914444b26174a4444b13d
+ScriptedImporter:
+  fileIDToRecycleName:
+    2100000: Cookie_Material
+    2800000: Cookie_Material - baseColor
+    2800002: Cookie_Material - normal
+    2800004: Cookie_Material - metallic
+    2800006: Cookie_Material - height
+    11400000: sbsar
+    11400002: graph0
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 232528478, guid: 43a8bbf65be290d44ba52b94476242b9, type: 3}
+  version: 17
+  mGraphInstanceData:
+  - graphLabel: Cookie_Material
+    prototypeName: Cookie_Material
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://Cookie_Material\" label=\"\" >\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: baseColor,normal,metallic,height
+    texturePackingList:
+    - outputName: baseColor
+      alphaSource: baseColor
+    - outputName: normal
+      alphaSource: normal
+    - outputName: roughness
+      alphaSource: roughness
+    - outputName: metallic
+      alphaSource: smoothness
+    - outputName: height
+      alphaSource: height
+    textureParameters:
+    - textureName: Cookie_Material - roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Cookie_Material - baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Cookie_Material - normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Cookie_Material - metallic
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Cookie_Material - height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: baseColor
+      bLinear: 0
+    - outputName: normal
+      bLinear: 1
+    - outputName: roughness
+      bLinear: 1
+    - outputName: metallic
+      bLinear: 1
+    - outputName: height
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: 
+      bLockRatio: 1
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    material: {fileID: 2100000, guid: ac2874e3425914444b26174a4444b13d, type: 3}
+    generatedTextures: []
