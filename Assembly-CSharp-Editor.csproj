@@ -701,6 +701,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp.csproj">
+      <Project>{255F5B72-56B9-BE1E-04BA-A8CAA8DD667B}</Project>
+      <Name>Assembly-CSharp</Name>
+    </ProjectReference>
     <ProjectReference Include="SteamVR_Actions.csproj">
       <Project>{01FBDEFC-19E3-E577-BD39-F6836BA39112}</Project>
       <Name>SteamVR_Actions</Name>
