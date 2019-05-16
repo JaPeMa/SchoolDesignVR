@@ -14,7 +14,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 4
   m_CollisionDetection: 0
 --- !u!64 &1229597612
 MeshCollider:
@@ -135,8 +135,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: 7a4e3fc5fffd662489ba1e3366835324, type: 3}
       propertyPath: m_Name
-      value: RFAIPP_Dining_Table_2 (1)
+      value: MesaRedondaFuncional
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 7a4e3fc5fffd662489ba1e3366835324, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f89317f2ad3abe249981727a559d0623, type: 2}
     - target: {fileID: 400000, guid: 7a4e3fc5fffd662489ba1e3366835324, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.154
@@ -181,10 +185,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 7a4e3fc5fffd662489ba1e3366835324, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: f89317f2ad3abe249981727a559d0623, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a4e3fc5fffd662489ba1e3366835324, type: 3}
 --- !u!1 &1640456721239418381 stripped

@@ -11,6 +11,9 @@ public class RightRayController : MonoBehaviour
     public Material invisibleTexture;
     private bool visible = false;
     public GameObject teleportingObject;
+    public GameObject table;
+    public GameObject rightHand;
+    private GameObject collisioningObject;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -18,6 +21,8 @@ public class RightRayController : MonoBehaviour
         {
             changeVisibility();
         }
+        Debug.Log(other.gameObject.tag);
+        collisioningObject = other.gameObject;
     }
 
     private void OnTriggerExit(Collider other)
@@ -26,6 +31,7 @@ public class RightRayController : MonoBehaviour
         {
             changeVisibility();
         }
+        collisioningObject = null;
     }
 
     private void changeVisibility()
@@ -37,9 +43,17 @@ public class RightRayController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (SteamVR_Actions.default_GrabPinch.state && visible) {
-            Destroy(teleportingObject);
-            SceneManager.LoadScene("Instituto");
+        if (SteamVR_Actions.default_GrabPinch.state) {
+            if (visible)
+            {
+                Destroy(teleportingObject);
+                SceneManager.LoadScene("Instituto");
+            }
+
+            if (collisioningObject != null && collisioningObject.tag == "createTable")
+            {                
+                Instantiate(table, new Vector3(rightHand.transform.position.x, rightHand.transform.position.y, rightHand.transform.position.z), Quaternion.identity);
+            }
         }
     }
 }

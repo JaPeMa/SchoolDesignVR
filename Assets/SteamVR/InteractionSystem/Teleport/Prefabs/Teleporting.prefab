@@ -1167,6 +1167,8 @@ MonoBehaviour:
   visibleTexture: {fileID: 0}
   invisibleTexture: {fileID: 0}
   teleportingObject: {fileID: 0}
+  table: {fileID: 0}
+  rightHand: {fileID: 0}
 --- !u!1 &165400
 GameObject:
   m_ObjectHideFlags: 0
@@ -1735,6 +1737,8 @@ MonoBehaviour:
   visibleTexture: {fileID: 2100000, guid: a3369428de4912f4e845c95feed134cb, type: 2}
   invisibleTexture: {fileID: 2100000, guid: e8e5b28090cd2e54da9cafec7ab36b2c, type: 2}
   teleportingObject: {fileID: 153878}
+  table: {fileID: 1640456721239418381, guid: 07aefaa7e5d5f3e4d927c46615e37a2a, type: 3}
+  rightHand: {fileID: 2788497552866193579}
 --- !u!1 &7373890777923306807
 GameObject:
   m_ObjectHideFlags: 0
@@ -1884,15 +1888,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
---- !u!4 &2788497552866416173 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9,
+--- !u!1 &2788497552866193579 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 160596, guid: dc06161b6d97feb419f45f03b62e14b9,
     type: 3}
   m_PrefabInstance: {fileID: 2788497552866067455}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &2788497552866519925 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 485514, guid: dc06161b6d97feb419f45f03b62e14b9,
+    type: 3}
+  m_PrefabInstance: {fileID: 2788497552866067455}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2788497552866416173 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9,
     type: 3}
   m_PrefabInstance: {fileID: 2788497552866067455}
   m_PrefabAsset: {fileID: 0}
