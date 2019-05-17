@@ -1,20 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Valve.VR;
+using Valve.VR.InteractionSystem;
 
 public class DeleteObjectHandler : MonoBehaviour
 {
-
-    private GameObject objectColliding;
-
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    public void assign(GameObject objectToAssign)
-    {
-        objectColliding = objectToAssign;
+        if (gameObject.GetComponent<Hand>().currentAttachedObject != null && SteamVR_Actions.default_GrabGrip.state)
+        {
+            Destroy(gameObject.GetComponent<Hand>().currentAttachedObject);
+        }
     }
 }
