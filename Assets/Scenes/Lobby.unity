@@ -4338,6 +4338,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1011499645 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2788497552866193579, guid: 7a135b1a2cb9c8f488d4dd00c55ab283,
+    type: 3}
+  m_PrefabInstance: {fileID: 341118017}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1011499646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011499645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cfbe45a81b4b8b40930c85c50c2321b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1081013569
 GameObject:
   m_ObjectHideFlags: 0
@@ -6163,7 +6181,7 @@ MonoBehaviour:
   tagRequired: INTERACTABLE
   visibleTexture: {fileID: 2100000, guid: a3369428de4912f4e845c95feed134cb, type: 2}
   invisibleTexture: {fileID: 2100000, guid: e8e5b28090cd2e54da9cafec7ab36b2c, type: 2}
-  teleportingObject: {fileID: 0}
+  teleportingObject: {fileID: 1547802562}
 --- !u!1 &1346831156
 GameObject:
   m_ObjectHideFlags: 0
@@ -6635,6 +6653,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 0c2b269c4969a25429b285ff234cd8bb, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 344c68b28199ba64cb1254871f741488, type: 3}
+--- !u!1 &1547802562 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 153878, guid: 7a135b1a2cb9c8f488d4dd00c55ab283,
+    type: 3}
+  m_PrefabInstance: {fileID: 341118017}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1553390601
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8844,6 +8868,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1229597610, guid: 07aefaa7e5d5f3e4d927c46615e37a2a, type: 3}
       propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1229597608, guid: 07aefaa7e5d5f3e4d927c46615e37a2a, type: 3}
+      propertyPath: onPickUp.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1229597608, guid: 07aefaa7e5d5f3e4d927c46615e37a2a, type: 3}
+      propertyPath: releaseVelocityStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1229597608, guid: 07aefaa7e5d5f3e4d927c46615e37a2a, type: 3}
+      propertyPath: onPickUp.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1229597608, guid: 07aefaa7e5d5f3e4d927c46615e37a2a, type: 3}
+      propertyPath: onPickUp.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1229597608, guid: 07aefaa7e5d5f3e4d927c46615e37a2a, type: 3}
+      propertyPath: onPickUp.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11500000, guid: 1cfbe45a81b4b8b40930c85c50c2321b,
+        type: 3}
+    - target: {fileID: 1229597611, guid: 07aefaa7e5d5f3e4d927c46615e37a2a, type: 3}
+      propertyPath: hideHandOnAttach
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

@@ -20,7 +20,7 @@ public class RightRayController : HandObjectsBasicHandler
 
     public bool CheckConditionToDo()
     {
-        return SteamVR_Actions.default_GrabPinch.state;
+        return SteamVR_Actions.default_GrabPinch.state && visible;
     }
 
 }

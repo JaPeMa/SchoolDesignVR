@@ -8,7 +8,7 @@ public abstract class HandObjectsBasicHandler : MonoBehaviour
     public Material visibleTexture;
     public Material invisibleTexture;
     protected GameObject collisioningObject;
-    private bool visible = false;
+    protected bool visible = false;
 
     private void OnTriggerEnter(Collider other)
     {

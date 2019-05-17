@@ -1,0 +1,112 @@
+fileFormatVersion: 2
+guid: ceef71a76a9cf0c44bc0e52595f40fc8
+ScriptedImporter:
+  fileIDToRecycleName:
+    2100000: Wool fluffy
+    2800000: Wool fluffy - baseColor
+    2800002: Wool fluffy - normal
+    2800004: Wool fluffy - metallic
+    2800006: Wool fluffy - ambientOcclusion
+    2800008: Wool fluffy - height
+    11400000: sbsar
+    11400002: graph0
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 232528478, guid: 43a8bbf65be290d44ba52b94476242b9, type: 3}
+  version: 17
+  mGraphInstanceData:
+  - graphLabel: Wool fluffy
+    prototypeName: Wool fluffy
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://fabric_wool_fluffy\" label=\"\" >\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: baseColor,normal,metallic,ambientOcclusion,height
+    texturePackingList:
+    - outputName: diffuse
+      alphaSource: diffuse
+    - outputName: baseColor
+      alphaSource: baseColor
+    - outputName: normal
+      alphaSource: normal
+    - outputName: specular
+      alphaSource: specular
+    - outputName: glossiness
+      alphaSource: glossiness
+    - outputName: roughness
+      alphaSource: roughness
+    - outputName: metallic
+      alphaSource: smoothness
+    - outputName: ambientOcclusion
+      alphaSource: ambientOcclusion
+    - outputName: height
+      alphaSource: height
+    textureParameters:
+    - textureName: Wool fluffy - glossiness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Wool fluffy - diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Wool fluffy - baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Wool fluffy - normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Wool fluffy - specular
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Wool fluffy - roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Wool fluffy - metallic
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Wool fluffy - ambientOcclusion
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Wool fluffy - height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: diffuse
+      bLinear: 0
+    - outputName: baseColor
+      bLinear: 0
+    - outputName: normal
+      bLinear: 1
+    - outputName: specular
+      bLinear: 0
+    - outputName: glossiness
+      bLinear: 1
+    - outputName: roughness
+      bLinear: 1
+    - outputName: metallic
+      bLinear: 1
+    - outputName: ambientOcclusion
+      bLinear: 1
+    - outputName: height
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: 
+      bLockRatio: 1
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    material: {fileID: 2100000, guid: ceef71a76a9cf0c44bc0e52595f40fc8, type: 3}
+    generatedTextures: []
