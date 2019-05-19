@@ -1307,6 +1307,7 @@ namespace Valve.VR.InteractionSystem
         //-------------------------------------------------
         protected virtual void OnInputFocus(bool hasFocus)
         {
+            Debug.Log("Acaba de entrar -> " + hasFocus);
             if (hasFocus)
             {
                 DetachObject(applicationLostFocusObject, true);

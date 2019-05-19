@@ -2,40 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR;
+using UnityEngine.SceneManagement;
 
-public class RightRayController : MonoBehaviour
+public class RightRayController : HandObjectsBasicHandler
 {
-    private string menuItemTag = "INTERACTABLE";
-    public Material visibleTexture;
-    public Material invisibleTexture;
-    private bool visible = false;
 
-    private void OnTriggerEnter(Collider other)
+    public GameObject teleportingObject;
+
+    public override void DoWhatever()
     {
-        Debug.Log(other.gameObject.tag);
-        if (other.gameObject.tag == menuItemTag && !visible)
+        if (CheckConditionToDo())
         {
-            changeVisibility();
+            Destroy(teleportingObject);
+            SceneManager.LoadScene(collisioningObject.GetComponent<ItemToNavigate>().goTo);
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    public bool CheckConditionToDo()
     {
-        if (other.gameObject.tag == menuItemTag && visible)
-        {
-            changeVisibility();
-        }
+        return SteamVR_Actions.default_GrabPinch.state && visible;
     }
 
-    private void changeVisibility()
-    {
-        visible = !visible;
-        GetComponent<Renderer>().sharedMaterial = visible ? visibleTexture : invisibleTexture;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
