@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR;
 using UnityEngine.SceneManagement;
+using Valve.VR.InteractionSystem;
+
 
 public class RightRayController : HandObjectsBasicHandler
 {
@@ -20,7 +22,7 @@ public class RightRayController : HandObjectsBasicHandler
 
     public bool CheckConditionToDo()
     {
-        return SteamVR_Actions.default_GrabPinch.state && visible;
+        return SteamVR_Actions.default_InteractUI.state && visible && gameObject.transform.parent.GetComponent<Hand>().currentAttachedObject == null;
     }
 
 }

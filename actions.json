@@ -41,7 +41,7 @@
       "requirement": "optional"
     },
     {
-      "name": "/actions/default/in/SelectMenuOption",
+      "name": "/actions/default/in/OpenMenu",
       "type": "boolean"
     },
     {
@@ -81,7 +81,7 @@
   "action_sets": [
     {
       "name": "/actions/default",
-      "usage": "single"
+      "usage": "leftright"
     },
     {
       "name": "/actions/platformer",

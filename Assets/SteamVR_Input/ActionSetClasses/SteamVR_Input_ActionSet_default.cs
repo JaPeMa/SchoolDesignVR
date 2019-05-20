@@ -89,11 +89,11 @@ namespace Valve.VR
             }
         }
         
-        public virtual SteamVR_Action_Boolean SelectMenuOption
+        public virtual SteamVR_Action_Boolean OpenMenu
         {
             get
             {
-                return SteamVR_Actions.default_SelectMenuOption;
+                return SteamVR_Actions.default_OpenMenu;
             }
         }
         
