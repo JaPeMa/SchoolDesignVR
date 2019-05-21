@@ -9,9 +9,21 @@ public class RightBallController : HandObjectsBasicHandler
     {
         if (CheckConditionToDo())
         {
-            Instantiate(collisioningObject.GetComponent<ObjectToCreate>().objectToCreate, 
-                new Vector3(gameObject.transform.parent.position.x, gameObject.transform.parent.position.y, gameObject.transform.parent.position.z), 
-                new Quaternion());
+
+            Component objectToCreate = collisioningObject.GetComponent<ObjectToCreate>();
+            Component menuToOpen = collisioningObject.GetComponent<OpenMenu>();
+            if (objectToCreate != null)
+            {
+                Instantiate(collisioningObject.GetComponent<ObjectToCreate>().objectToCreate, 
+                            new Vector3(gameObject.transform.parent.position.x, gameObject.transform.parent.position.y, gameObject.transform.parent.position.z), 
+                            new Quaternion());
+            }
+
+            if (menuToOpen != null)
+            {
+                //gameObject.transform.parent.parent.FindChild("LeftHand").FindChild("")
+            }
+            
             objectGenerated = true;
         }
         if (objectGenerated && !SteamVR_Actions.default_GrabPinch.state)
