@@ -150,6 +150,8 @@ namespace Valve.VR.InteractionSystem
 			attachPosition = transform.position;
 			attachRotation = transform.rotation;
 
+
+
 		}
 
 

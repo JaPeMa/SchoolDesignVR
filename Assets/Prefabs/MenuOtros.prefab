@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 1678369942244855595}
   m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.492, z: 0}
-  m_LocalScale: {x: 1.0002384, y: 0.02565724, z: 1}
+  m_LocalScale: {x: 1.2, y: 0.02565724, z: 1}
   m_Children: []
   m_Father: {fileID: 6743394529548758673}
   m_RootOrder: 3
@@ -242,7 +242,7 @@ Transform:
   m_GameObject: {fileID: 2663090722575643108}
   m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.506, z: 0}
-  m_LocalScale: {x: 1, y: 0.0256515, z: 1}
+  m_LocalScale: {x: 1.2, y: 0.0256515, z: 1}
   m_Children: []
   m_Father: {fileID: 6743394529548758673}
   m_RootOrder: 2
@@ -333,7 +333,7 @@ Transform:
   m_GameObject: {fileID: 4021751858737006857}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0.007, z: -0.508}
-  m_LocalScale: {x: 1.0002384, y: 0.02565724, z: 1.0181713}
+  m_LocalScale: {x: 1.2, y: 0.02565724, z: 1.0181713}
   m_Children: []
   m_Father: {fileID: 6743394529548758673}
   m_RootOrder: 4
@@ -631,7 +631,7 @@ GameObject:
   - component: {fileID: 1526519047121597698}
   - component: {fileID: 8994396860775416721}
   - component: {fileID: 3490157942108737474}
-  - component: {fileID: 8502348528278296853}
+  - component: {fileID: 6784265714119261593}
   m_Layer: 0
   m_Name: Cube (3)
   m_TagString: createObject
@@ -727,7 +727,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &8502348528278296853
+--- !u!114 &6784265714119261593
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -736,10 +736,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4926348490903896043}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db58c62dc51902d4bbaa6c45f451ae32, type: 3}
+  m_Script: {fileID: 11500000, guid: 4a8920cd9eda84944a75517b4dcceda6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToCreate: {fileID: 8080907927375641581, guid: 45e195fb2a1ce5c46b9e1e8e3ae530bc,
+  menuToOpen: {fileID: 2923095798009811314, guid: dbbe3c20644356a41b4ca8474ee257e0,
     type: 3}
 --- !u!1 &4975156519648358416
 GameObject:
@@ -892,7 +892,7 @@ Transform:
   m_GameObject: {fileID: 6092215252641061479}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0.007, z: 0.511}
-  m_LocalScale: {x: 1.0002384, y: 0.025664644, z: 1.0181876}
+  m_LocalScale: {x: 1.2, y: 0.025664644, z: 1.0181876}
   m_Children: []
   m_Father: {fileID: 6743394529548758673}
   m_RootOrder: 5

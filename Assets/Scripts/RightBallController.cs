@@ -5,6 +5,9 @@ using Valve.VR;
 
 public class RightBallController : HandObjectsBasicHandler
 {
+
+    public GameObject leftHand;
+
     public override void DoWhatever()
     {
         if (CheckConditionToDo())
@@ -21,7 +24,8 @@ public class RightBallController : HandObjectsBasicHandler
 
             if (menuToOpen != null)
             {
-                //gameObject.transform.parent.parent.FindChild("LeftHand").FindChild("")
+                Destroy(leftHand.transform.Find("Menu").gameObject);
+                leftHand.GetComponent<LeftHandController>().instantiateMenu(collisioningObject.GetComponent<OpenMenu>().menuToOpen);
             }
             
             objectGenerated = true;

@@ -1717,6 +1717,7 @@ MonoBehaviour:
   tagRequired: createObject
   visibleTexture: {fileID: 2100000, guid: a3369428de4912f4e845c95feed134cb, type: 2}
   invisibleTexture: {fileID: 2100000, guid: e8e5b28090cd2e54da9cafec7ab36b2c, type: 2}
+  leftHand: {fileID: 0}
 --- !u!1 &1706779322690093676
 GameObject:
   m_ObjectHideFlags: 0
@@ -1879,6 +1880,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0aa3d4216ab2644cbb62b8d0a4d981b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menu: {fileID: 2923095798009811314, guid: dbbe3c20644356a41b4ca8474ee257e0, type: 3}
 --- !u!1001 &2788497552866067455
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1886,34 +1888,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 475244}
     m_Modifications:
-    - target: {fileID: 11401046, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
-      propertyPath: otherHand
-      value: 
-      objectReference: {fileID: 2788497552856478775}
-    - target: {fileID: 11401046, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
-      propertyPath: hoverSphereTransform
-      value: 
-      objectReference: {fileID: 2788497552866514767}
-    - target: {fileID: 11401046, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
-      propertyPath: objectAttachmentPoint
-      value: 
-      objectReference: {fileID: 2788497552866523613}
-    - target: {fileID: 11450312, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
-      propertyPath: otherHand
-      value: 
-      objectReference: {fileID: 2788497552856396969}
-    - target: {fileID: 11450312, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
-      propertyPath: hoverSphereTransform
-      value: 
-      objectReference: {fileID: 2791262263827608231}
-    - target: {fileID: 11450312, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
-      propertyPath: objectAttachmentPoint
-      value: 
-      objectReference: {fileID: 2791262262522997299}
-    - target: {fileID: 11497470, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
-      propertyPath: noSteamVRFallbackCamera
-      value: 
-      objectReference: {fileID: 2788497552868051323}
     - target: {fileID: 107946, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_Name
       value: Player
@@ -2002,6 +1976,34 @@ PrefabInstance:
       propertyPath: audioListener
       value: 
       objectReference: {fileID: 2788497552866537813}
+    - target: {fileID: 11401046, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: otherHand
+      value: 
+      objectReference: {fileID: 2788497552856478775}
+    - target: {fileID: 11401046, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: hoverSphereTransform
+      value: 
+      objectReference: {fileID: 2788497552866514767}
+    - target: {fileID: 11401046, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: objectAttachmentPoint
+      value: 
+      objectReference: {fileID: 2788497552866523613}
+    - target: {fileID: 11450312, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: otherHand
+      value: 
+      objectReference: {fileID: 2788497552856396969}
+    - target: {fileID: 11450312, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: hoverSphereTransform
+      value: 
+      objectReference: {fileID: 2791262263827608231}
+    - target: {fileID: 11450312, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: objectAttachmentPoint
+      value: 
+      objectReference: {fileID: 2791262262522997299}
+    - target: {fileID: 11497470, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: noSteamVRFallbackCamera
+      value: 
+      objectReference: {fileID: 2788497552868051323}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
 --- !u!4 &2788497552866416173 stripped

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Valve.VR.InteractionSystem;
 
 public abstract class HandObjectsBasicHandler : MonoBehaviour
 {
@@ -42,6 +43,16 @@ public abstract class HandObjectsBasicHandler : MonoBehaviour
     void Update()
     {
         DoWhatever();
+    }
+
+    public void stopCollisions()
+    {
+        gameObject.transform.parent.GetComponent<Hand>().currentAttachedObject.GetComponent<Rigidbody>().isKinematic = true;
+    }
+
+    public void putCollisions()
+    {
+        gameObject.transform.parent.GetComponent<Hand>().currentAttachedObject.GetComponent<Rigidbody>().isKinematic = false;
     }
 
     public abstract void DoWhatever();
