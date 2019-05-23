@@ -2110,7 +2110,7 @@ PrefabInstance:
     - target: {fileID: 8857966093337203825, guid: ebd73c52d7c174440a9dd342906ace77,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.08
+      value: 3.951
       objectReference: {fileID: 0}
     - target: {fileID: 8857966093337203825, guid: ebd73c52d7c174440a9dd342906ace77,
         type: 3}
@@ -5163,6 +5163,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1534562703, guid: 344c68b28199ba64cb1254871f741488, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0c2b269c4969a25429b285ff234cd8bb, type: 2}
     - target: {fileID: 1534562701, guid: 344c68b28199ba64cb1254871f741488, type: 3}
       propertyPath: m_Mass
       value: 2500.0105
@@ -5171,10 +5175,6 @@ PrefabInstance:
       propertyPath: m_IsKinematic
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1534562703, guid: 344c68b28199ba64cb1254871f741488, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 0c2b269c4969a25429b285ff234cd8bb, type: 2}
     - target: {fileID: 1534562699, guid: 344c68b28199ba64cb1254871f741488, type: 3}
       propertyPath: onDetachFromHand.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -5568,14 +5568,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1534562701, guid: 344c68b28199ba64cb1254871f741488, type: 3}
-      propertyPath: m_Mass
-      value: 250
-      objectReference: {fileID: 0}
     - target: {fileID: 1534562703, guid: 344c68b28199ba64cb1254871f741488, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 0c2b269c4969a25429b285ff234cd8bb, type: 2}
+    - target: {fileID: 1534562701, guid: 344c68b28199ba64cb1254871f741488, type: 3}
+      propertyPath: m_Mass
+      value: 250
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 344c68b28199ba64cb1254871f741488, type: 3}
 --- !u!1 &1655886387
