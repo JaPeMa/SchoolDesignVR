@@ -213,6 +213,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 38.285004
       objectReference: {fileID: 0}
+    - target: {fileID: 64081463316364030, guid: fcf06ec46d0005b4db19264b4f26b166,
+        type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64841072777645436, guid: fcf06ec46d0005b4db19264b4f26b166,
+        type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fcf06ec46d0005b4db19264b4f26b166, type: 3}
 --- !u!1 &3181210108481992003 stripped

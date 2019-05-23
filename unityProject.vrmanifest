@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.vrproject.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "C:\\Users\\jaime\\Documents\\VR project\\actions.json",
+      "action_manifest_path": "C:\\Users\\jaime\\Documents\\SchoolDesignVRTEST\\SchoolDesignVR\\actions.json",
       "strings": {
         "en_us": {
           "name": "VR project [Testing]"
