@@ -17,9 +17,10 @@ public class RightBallController : HandObjectsBasicHandler
             Component menuToOpen = collisioningObject.GetComponent<OpenMenu>();
             if (objectToCreate != null)
             {
-                Instantiate(collisioningObject.GetComponent<ObjectToCreate>().objectToCreate, 
+                GameObject objectCreated = Instantiate(collisioningObject.GetComponent<ObjectToCreate>().objectToCreate, 
                             new Vector3(gameObject.transform.parent.position.x, gameObject.transform.parent.position.y, gameObject.transform.parent.position.z), 
-                            new Quaternion());
+                            new Quaternion()) as GameObject;
+                GetComponent<AttachedObjectController>().tryToBeInTheFloor(objectCreated);
             }
 
             if (menuToOpen != null)
