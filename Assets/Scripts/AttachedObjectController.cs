@@ -16,4 +16,12 @@ public class AttachedObjectController : MonoBehaviour
         rotation.z = 0f;
         objectDeattached.transform.rotation = rotation;
     }
+
+    public void fixRotation(GameObject objectDeattached)
+    {
+        Quaternion rotation = objectDeattached.transform.rotation;
+        rotation.x = 0f;
+        rotation.z = 0f;
+        objectDeattached.transform.rotation = rotation;
+    }
 }
