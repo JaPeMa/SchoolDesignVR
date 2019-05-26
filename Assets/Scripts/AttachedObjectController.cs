@@ -8,7 +8,7 @@ public class AttachedObjectController : MonoBehaviour
     public void tryToBeInTheFloor(GameObject objectDeattached)
     {
         Vector3 position = objectDeattached.transform.position;
-        position.y = 0.05f;
+        position.y = 0f;
         objectDeattached.transform.position = position;
 
         Quaternion rotation = objectDeattached.transform.rotation;

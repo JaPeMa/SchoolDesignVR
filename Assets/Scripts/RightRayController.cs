@@ -15,8 +15,18 @@ public class RightRayController : HandObjectsBasicHandler
     {
         if (CheckConditionToDo())
         {
-            Destroy(teleportingObject);
-            SceneManager.LoadScene(collisioningObject.GetComponent<ItemToNavigate>().goTo);
+            
+            if (collisioningObject.GetComponent<PuertaReturn>() != null)
+            {
+                Debug.Log("cojones que coño esta pasando aqui AAAAAA");
+                collisioningObject.GetComponent<PuertaReturn>().openDoor(teleportingObject);
+            }
+            else
+            {
+                Debug.Log("ok?");
+                Destroy(teleportingObject);
+                SceneManager.LoadScene(collisioningObject.GetComponent<ItemToNavigate>().goTo);
+            }
         }
     }
 

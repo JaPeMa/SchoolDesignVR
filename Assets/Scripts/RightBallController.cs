@@ -6,6 +6,8 @@ using Valve.VR;
 public class RightBallController : HandObjectsBasicHandler
 {
 
+    public GameObject vrCamera;
+    public GameObject objectPosition;
     public GameObject leftHand;
 
     public override void DoWhatever()
@@ -17,10 +19,12 @@ public class RightBallController : HandObjectsBasicHandler
             Component menuToOpen = collisioningObject.GetComponent<OpenMenu>();
             if (objectToCreate != null)
             {
-                GameObject objectCreated = Instantiate(collisioningObject.GetComponent<ObjectToCreate>().objectToCreate, 
-                            new Vector3(gameObject.transform.parent.position.x, gameObject.transform.parent.position.y, gameObject.transform.parent.position.z), 
-                            new Quaternion()) as GameObject;
-                GetComponent<AttachedObjectController>().tryToBeInTheFloor(objectCreated);
+                GameObject objectCreated = collisioningObject.GetComponent<ObjectToCreate>().objectToCreate;
+                Vector3 position = new Vector3(objectPosition.transform.position.x, 0f, objectPosition.transform.position.z);
+                Quaternion rotation = new Quaternion();
+                rotation.y = vrCamera.transform.parent.rotation.y - 180f;
+                Instantiate(objectCreated, position, rotation);
+                //scripter.GetComponent<AttachedObjectController>().tryToBeInTheFloor(objectCreated);
             }
 
             if (menuToOpen != null)
