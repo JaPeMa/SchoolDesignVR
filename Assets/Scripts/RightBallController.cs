@@ -22,9 +22,8 @@ public class RightBallController : HandObjectsBasicHandler
                 GameObject objectCreated = collisioningObject.GetComponent<ObjectToCreate>().objectToCreate;
                 Vector3 position = new Vector3(objectPosition.transform.position.x, 0f, objectPosition.transform.position.z);
                 Quaternion rotation = new Quaternion();
-                rotation.y = vrCamera.transform.parent.rotation.y - 180f;
+                rotation.y = vrCamera.transform.rotation.y - 180f;
                 Instantiate(objectCreated, position, rotation);
-                //scripter.GetComponent<AttachedObjectController>().tryToBeInTheFloor(objectCreated);
             }
 
             if (menuToOpen != null)

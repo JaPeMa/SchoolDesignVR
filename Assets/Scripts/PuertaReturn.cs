@@ -11,8 +11,7 @@ public class PuertaReturn : MonoBehaviour
     private GameObject teleportingObject;
     public void openDoor(GameObject _teleportingObject)
     {
-        Debug.Log("aaa");
-        animat.SetBool("returnLobby",true);
+        animat.SetBool("returnLobby", true);
         teleportingObject = _teleportingObject;
     }
 

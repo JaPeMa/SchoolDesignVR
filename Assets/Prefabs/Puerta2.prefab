@@ -870,9 +870,15 @@ GameObject:
   m_Component:
   - component: {fileID: 6979479740897919843}
   - component: {fileID: 1116246070613052340}
+  - component: {fileID: 1209822567317606817}
+  - component: {fileID: 3169252487572133407}
+  - component: {fileID: 2593341115983170832}
+  - component: {fileID: 4997099920074190959}
+  - component: {fileID: 6430969525664216907}
+  - component: {fileID: 6430969525664216908}
   m_Layer: 0
   m_Name: Puerta2
-  m_TagString: Untagged
+  m_TagString: INTERACTABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -911,3 +917,84 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1209822567317606817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6979479740897919772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12e75c5952a7ca448895131a54c36177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goTo: Lobby
+--- !u!114 &3169252487572133407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6979479740897919772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3558b3233094caa40ac98a75c929c3c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animat: {fileID: 1116246070613052340}
+--- !u!65 &2593341115983170832
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6979479740897919772}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25559425, y: 0.22229385, z: 0.23987675}
+  m_Center: {x: -21.748627, y: 10.307583, z: 1.9240627}
+--- !u!54 &4997099920074190959
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6979479740897919772}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &6430969525664216907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6979479740897919772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12e75c5952a7ca448895131a54c36177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goTo: Lobby
+--- !u!114 &6430969525664216908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6979479740897919772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3558b3233094caa40ac98a75c929c3c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animat: {fileID: 1116246070613052340}

@@ -10,20 +10,23 @@ public class RightRayController : HandObjectsBasicHandler
 {
 
     public GameObject teleportingObject;
+    public GameObject player;
 
     public override void DoWhatever()
     {
         if (CheckConditionToDo())
         {
             
-            if (collisioningObject.GetComponent<PuertaReturn>() != null)
+            if(collisioningObject.GetComponent<MoveToScript>() != null)
             {
-                Debug.Log("cojones que coño esta pasando aqui AAAAAA");
+                player.transform.position = collisioningObject.GetComponent<MoveToScript>().whereToGo;
+            }
+            else if (collisioningObject.GetComponent<PuertaReturn>() != null)
+            {
                 collisioningObject.GetComponent<PuertaReturn>().openDoor(teleportingObject);
             }
             else
             {
-                Debug.Log("ok?");
                 Destroy(teleportingObject);
                 SceneManager.LoadScene(collisioningObject.GetComponent<ItemToNavigate>().goTo);
             }

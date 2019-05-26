@@ -7,6 +7,7 @@ TagManager:
   - INTERACTABLE
   - createTable
   - createObject
+  - GoToEasterEgg
   layers:
   - Default
   - TransparentFX
