@@ -2020,6 +2020,11 @@ PrefabInstance:
       propertyPath: noSteamVRFallbackCamera
       value: 
       objectReference: {fileID: 2788497552868051323}
+    - target: {fileID: 114000012749712888, guid: dc06161b6d97feb419f45f03b62e14b9,
+        type: 3}
+      propertyPath: doNotDestroy
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
 --- !u!4 &2788497552866523613 stripped
